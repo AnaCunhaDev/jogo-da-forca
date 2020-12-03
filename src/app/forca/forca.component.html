@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div id="dica">
+    <h1> {{dica}} </h1>
+  </div>
+  <div id="caixa-forca">
+    <app-img-forca [vida]="vida"></app-img-forca>
+  </div>
+
+  <div id="caixa-lacunas">
+    <p class="lacunas" *ngFor="let l of lacunas"> {{l | uppercase}} </p>
+  </div>
+
+
+  <app-input (letraEscolhida)="pegaLetra($event)" [fim]="fim" #InputComponent></app-input>
+  <div *ngIf="fim" id="mensagemFim">
+    <p> {{mensagem}} </p>
+    <P>jogar novamente? </P>
+    <input type="submit" (click)="habilitaBotoes()" class="botao" value="Sim">
+  </div>
+
+</div>

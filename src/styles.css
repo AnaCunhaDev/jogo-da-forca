@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #E0F8EC;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  #E3D216;
+}
+a{
+  text-decoration: none;
+}
+#app-input{
+  clear: both;
+}
+.container{
+  width: 920px;
+  margin: 0px auto;
+  background-color: #ebe8c0;
+  font-size: 32px;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold 999;
+}
+.botao {
+  color: #E3D216;
+  background-color: #04B431;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  /* float: left; */
+}
+.botao:hover, .botao:disabled{
+  color:  #04B431;
+  background-color: #fde800;
+
+}

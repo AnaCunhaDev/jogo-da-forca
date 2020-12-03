@@ -1,0 +1,15 @@
+<div class="container">
+  <form #cadastroPalavra="ngForm">
+    <label>dica: </label>
+    <!-- <input type="text" name="dica" id="dica" [(ngModel)]="palavra.dica"  minlength="5" required> -->
+    <select name="dica" id="dica" [(ngModel)]="palavra.dica" required>
+      <option *ngFor="let options of dicas" [value]="palavra.dica">
+        {{options}}
+      </option>
+
+    </select>
+    <label>palavra:</label>
+    <input type="text" name="palavra" id="palavra" [(ngModel)]="palavra.palavra">
+    <input type="submit" name="submit" id="submit" value="Cadastrar" (click)="Cadastrar()">
+  </form>
+</div>

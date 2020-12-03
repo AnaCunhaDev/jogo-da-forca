@@ -1,0 +1,15 @@
+.inicio{
+  background-color:  #04B431;
+  padding: 10px;
+}
+
+.inicio a:link, .inicio a:visited{
+  color:#04B431;
+  padding: 10px;
+  background-color: #E3D216;
+}
+.inicio a:hover{
+  color: #E3D216;
+  padding: 10px;
+  background-color: #04B431;
+}

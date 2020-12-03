@@ -1,0 +1,15 @@
+<div id="container-teclado" *ngIf="!fim">
+   <div *ngFor="let letra of letras; let i=index;" class="tecla">
+      <button type="button" value="{{letra.letra}}" (click)="pegaLetra(letra.letra)" class="botao" [disabled]="letra.ativo" *ngIf="i < 10">
+        {{letra.letra|uppercase}}
+      </button>
+      <button type="button" value="{{letra.letra}}" (click)="pegaLetra(letra.letra)" class="botao" [disabled]="letra.ativo" *ngIf="i >= 10 && i < 20">
+        {{letra.letra|uppercase}}
+      </button>
+      <button type="button" value="{{letra.letra}}" (click)="pegaLetra(letra.letra)" class="botao-ultima-fileira" [disabled]="letra.ativo" *ngIf="i >20 && i < 26">
+        {{letra.letra|uppercase}}
+      </button>
+   </div>
+
+</div>
+
